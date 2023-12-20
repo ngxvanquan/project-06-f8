@@ -1,0 +1,23 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    scroll-behavior: smooth;
+}
+
+input,
+textarea,
+select,
+button {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+}
