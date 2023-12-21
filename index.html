@@ -6,6 +6,12 @@
         <title>Project 06 F8</title>
 
         <!-- ========== Embeb Fonts ========== -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap"
+            rel="stylesheet"
+        />
 
         <!-- ========== Link Style ========== -->
         <link rel="stylesheet" href="./assets/css/reset.css" />
@@ -13,7 +19,54 @@
         <link rel="stylesheet" href="./assets/css/style.css" />
     </head>
     <body>
-        <header class="header"></header>
+        <header class="header">
+            <div class="container">
+                <div class="header-top">
+                    <div class="header__icons">
+                        <div class="header__icon">
+                            <img src="./assets/img/icon/letter.svg" alt="" />
+                        </div>
+                        <a
+                            title="Click to send mail!"
+                            href="mailto:ngxvanquan@gmail.com"
+                            class="header__email"
+                            >ngxvanquan@gmail.com</a
+                        >
+                    </div>
+
+                    <img
+                        src="./assets/img/avatar/header-avatar.png"
+                        alt=""
+                        class="header__avatar"
+                    />
+
+                    <nav class="navbar">
+                        <ul class="navbar__list">
+                            <li class="navbar__item">
+                                <a href="#project" class="navbar__link"
+                                    >Projects</a
+                                >
+                            </li>
+                            <li class="navbar__item">
+                                <a href="#journey" class="navbar__link"
+                                    >Journey</a
+                                >
+                            </li>
+                            <li class="navbar__item">
+                                <a href="#service" class="navbar__link"
+                                    >Service</a
+                                >
+                            </li>
+                            <li class="navbar__item">
+                                <a href="#contact" class="navbar__link"
+                                    >Contact</a
+                                >
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
         <main class="main"></main>
         <footer class="footer"></footer>
     </body>

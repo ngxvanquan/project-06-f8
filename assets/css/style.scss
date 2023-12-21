@@ -6,11 +6,12 @@
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body {
     font-size: 1.6rem;
-    scroll-behavior: smooth;
+    font-family: "DM Sans", sans-serif;
 }
 
 input,
@@ -20,4 +21,70 @@ button {
     font-family: inherit;
     font-size: inherit;
     color: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+
+// Header Top
+.header-top {
+    display: flex;
+    padding-top: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__icons {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.header__icon {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(93, 59, 238, 0.2);
+}
+
+.header__email {
+    position: relative;
+    color: #080415;
+    font-size: 2.2rem;
+    font-weight: 500;
+    line-height: 1.36; /* 136.364% */
+}
+
+.header__email::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background: #080415;
+    left: 0;
+    bottom: 3px;
+}
+
+.header__avatar {
+    display: block;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.navbar__list {
+    display: flex;
+    align-items: center;
+    column-gap: 43px;
+}
+
+.navbar__link {
+    color: #51586a;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: normal;
 }
