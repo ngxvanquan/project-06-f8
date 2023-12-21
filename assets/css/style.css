@@ -12,6 +12,7 @@ html {
 body {
   font-size: 1.6rem;
   font-family: "DM Sans", sans-serif;
+  height: 100000px;
 }
 
 input,
@@ -25,6 +26,51 @@ button {
 
 a {
   text-decoration: none;
+}
+
+.section-heading {
+  color: #080415;
+  font-weight: 500;
+}
+
+.section-heading.lv1 {
+  font-size: 8rem;
+  line-height: 0.95em;
+  letter-spacing: -0.32rem;
+}
+
+.section-heading.lv2 {
+  font-size: 5.6rem;
+  line-height: 1.17;
+  letter-spacing: -0.224rem;
+}
+
+.section-desc {
+  color: #51586a;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.66; /* 166.667% */
+}
+
+.btn {
+  --height: 62px;
+  display: inline-block;
+  min-width: 170px;
+  padding: 0 20px;
+  color: #fdfdfd;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: var(--height); /* 166.667% */
+}
+
+.btn:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+.header {
+  background: #fbfaff;
 }
 
 .header-top {
@@ -86,6 +132,98 @@ a {
   font-size: 1.8rem;
   font-weight: 400;
   line-height: normal;
+}
+
+.hero {
+  padding-top: 44px;
+}
+
+.hero__images {
+  position: relative;
+  width: 514px;
+  height: 705px;
+}
+
+.hero__media .hero__decor {
+  position: absolute;
+  top: -80px;
+  right: -166px;
+}
+
+.hero__content {
+  margin-top: 137px;
+  position: relative;
+}
+
+.hero__img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.hero__desc {
+  margin-top: 20px;
+}
+
+.hero__action {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  column-gap: 30px;
+}
+
+.hero__call {
+  background: #5d3bee;
+}
+
+.hero__work {
+  color: #080415;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1.66; /* 166.667% */
+  text-decoration-line: underline;
+}
+
+.hero__content .hero__decor {
+  position: absolute;
+  right: -100px;
+  bottom: -163px;
+}
+
+.hero-social {
+  margin-top: 104px;
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+}
+
+.hero-social__list {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+
+.hero-social__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid rgba(8, 4, 21, 0.1);
+}
+
+.hero-social__title {
+  color: #51586a;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.87; /* 187.5% */
+}
+
+.hero-social__icon {
+  width: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
