@@ -32,8 +32,8 @@
 .row[class*="row-cols-"] > * {
     flex: 0 0 auto;
     width: calc(100% / var(--row-cols-num));
-    padding-left: calc(var(--spacer) / 2);
-    padding-right: calc(var(--spacer) / 2);
+    /* padding-left: calc(var(--spacer) / 2);
+    padding-right: calc(var(--spacer) / 2); */
 }
 
 .row-cols-1 > * {
