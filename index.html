@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Project 06 F8</title>
+        <title>Nguyen Van Quan Profile</title>
 
         <!-- ========== Embeb Fonts ========== -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -11,6 +11,13 @@
         <link
             href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap"
             rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+            integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
         />
 
         <!-- ========== Link Style ========== -->
@@ -65,9 +72,220 @@
                         </ul>
                     </nav>
                 </div>
+
+                <section class="hero">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="hero__media">
+                                <figure class="hero__images">
+                                    <img
+                                        src="./assets/img/decor/header-decor.svg"
+                                        alt=""
+                                        class="hero__decor"
+                                    />
+
+                                    <img
+                                        src="./assets/img/hero-img.png"
+                                        alt="A Front-End Developer"
+                                        class="hero__img"
+                                    />
+                                </figure>
+                            </div>
+                        </div>
+
+                        <div class="col-5 offset-1">
+                            <section class="hero__content">
+                                <h1 class="hero__heading section-heading lv1">
+                                    A Front-End Developer
+                                </h1>
+                                <p class="hero__desc section-desc">
+                                    My name is Nguyen Van Quan and a front-end
+                                    developer, this year i'm 16 year old
+                                </p>
+
+                                <div class="hero__action">
+                                    <a
+                                        href="tel:0332655749"
+                                        class="hero__call btn"
+                                        >Book a Call</a
+                                    >
+                                    <a href="#!" class="hero__work">My Works</a>
+                                </div>
+
+                                <div class="hero-social">
+                                    <span class="hero-social__title"
+                                        >Follow me on:</span
+                                    >
+                                    <div class="hero-social__list">
+                                        <div class="hero-social__item">
+                                            <img
+                                                src="./assets/img/icon/fb.svg"
+                                                alt=""
+                                                class="hero-social__icon"
+                                            />
+                                        </div>
+                                        <div class="hero-social__item">
+                                            <img
+                                                src="./assets/img/icon/discord.svg"
+                                                alt=""
+                                                class="hero-social__icon"
+                                            />
+                                        </div>
+                                        <div class="hero-social__item">
+                                            <img
+                                                src="./assets/img/icon/github.svg"
+                                                alt=""
+                                                class="hero-social__icon"
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <img
+                                    src="./assets/img/decor/header-decor-2.svg"
+                                    alt=""
+                                    class="hero__decor"
+                                />
+                            </section>
+                        </div>
+                    </div>
+                </section>
             </div>
         </header>
-        <main class="main"></main>
+        <main class="main">
+            <section class="client">
+                <div class="container">
+                    <div class="client__row row">
+                        <div class="col-md-3 offset-1">
+                            <h2 class="client__heading section-heading lv2">
+                                Meet my recent clients
+                            </h2>
+                        </div>
+                        <div class="client__list row row-cols-4">
+                            <div class="client-item">
+                                <img
+                                    src="./assets/img/icon/google-icon.svg"
+                                    alt=""
+                                    class="client__logo"
+                                />
+                            </div>
+                            <div class="client-item">
+                                <img
+                                    src="./assets/img/icon/warner-bros.svg"
+                                    alt=""
+                                    class="client__logo"
+                                />
+                            </div>
+                            <div class="client-item">
+                                <img
+                                    src="./assets/img/icon/mailchimp.svg"
+                                    alt=""
+                                    class="client__logo"
+                                />
+                            </div>
+                            <div class="client-item">
+                                <img
+                                    src="./assets/img/icon/adobe.svg"
+                                    alt=""
+                                    class="client__logo"
+                                />
+                            </div>
+                            <div class="client-item">
+                                <img
+                                    src="./assets/img/icon/upwork.svg"
+                                    alt=""
+                                    class="client__logo"
+                                />
+                            </div>
+                            <div class="client-item">
+                                <img
+                                    src="./assets/img/icon/creative-cloud.svg"
+                                    alt=""
+                                    class="client__logo"
+                                />
+                            </div>
+                            <div class="client-item">
+                                <img
+                                    src="./assets/img/icon/woocommercde.svg"
+                                    alt=""
+                                    class="client__logo"
+                                />
+                            </div>
+                            <div class="client-item">
+                                <img
+                                    src="./assets/img/icon/canva.svg"
+                                    alt=""
+                                    class="client__logo"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="speciality">
+                <div class="container">
+                    <h2 class="speciality__heading section-heading lv2">
+                        Specialities
+                    </h2>
+                    <p class="speciality__desc section__desc">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        In urna, non nisl tincidunt ut elementum turpis.
+                    </p>
+
+                    <div class="speciality__row row">
+                        <div class="col speciality-item">
+                            <div class="speciality__icon-wrap">
+                                <img
+                                    src="./assets/img/icon/lightbuild.svg"
+                                    alt=""
+                                    class="speciality__icon"
+                                />
+                            </div>
+                            <h3 class="speciality-item__heading">
+                                Front-End developer
+                            </h3>
+                            <p class="speciality-item__desc">
+                                Lorem ipsum dolor sit amet, solor adipiscing
+                                elit. Non nisl solor ut elementum turpis.
+                            </p>
+                        </div>
+                        <div class="col speciality-item">
+                            <div class="speciality__icon-wrap">
+                                <img
+                                    src="./assets/img/icon/pencil-ruler.svg"
+                                    alt=""
+                                    class="speciality__icon"
+                                />
+                            </div>
+                            <h3 class="speciality-item__heading">
+                                Back-End developer
+                            </h3>
+                            <p class="speciality-item__desc">
+                                Lorem ipsum dolor sit amet, solor adipiscing
+                                elit. Non nisl solor ut elementum turpis.
+                            </p>
+                        </div>
+                        <div class="col speciality-item">
+                            <div class="speciality__icon-wrap">
+                                <img
+                                    src="./assets/img/icon/phone.svg"
+                                    alt=""
+                                    class="speciality__icon"
+                                />
+                            </div>
+                            <h3 class="speciality-item__heading">
+                                Produce developer
+                            </h3>
+                            <p class="speciality-item__desc">
+                                Lorem ipsum dolor sit amet, solor adipiscing
+                                elit. Non nisl solor ut elementum turpis.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
         <footer class="footer"></footer>
     </body>
 </html>

@@ -8,8 +8,6 @@
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    padding-left: calc(var(--spacer) / 2);
-    padding-right: calc(var(--spacer) / 2);
 }
 
 .row {
@@ -33,7 +31,7 @@
 
 .row[class*="row-cols-"] > * {
     flex: 0 0 auto;
-    width: calc(100% / var(----row-cols-num));
+    width: calc(100% / var(--row-cols-num));
     padding-left: calc(var(--spacer) / 2);
     padding-right: calc(var(--spacer) / 2);
 }
