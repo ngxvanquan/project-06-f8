@@ -12,7 +12,6 @@ html {
 body {
     font-size: 1.6rem;
     font-family: "DM Sans", sans-serif;
-    height: 100000px;
 }
 
 input,
@@ -196,7 +195,7 @@ a {
 
 .hero__content .hero__decor {
     position: absolute;
-    right: -88px;
+    right: 9px;
     bottom: -80px;
 }
 
@@ -238,6 +237,14 @@ a {
 .client {
     padding: 60px 0;
     margin-top: 40px;
+}
+
+.client__inner {
+    overflow: hidden;
+}
+
+.client__row {
+    margin: 0;
 }
 
 .client .client__heading {
@@ -294,7 +301,6 @@ a {
 
 .speciality__row {
     margin-top: 60px;
-    column-gap: 30px;
 }
 
 .speciality__icon-wrap {
@@ -307,12 +313,13 @@ a {
     justify-content: center;
 }
 
-.speciality-item {
+.speciality-item__inner {
     background: #fbfaff;
     padding: 33px 42px 32px 43px;
 }
 
 .speciality-item__heading {
+    white-space: nowrap;
     margin-top: 22px;
     color: #080415;
     font-size: 3.2rem;
@@ -322,6 +329,7 @@ a {
 }
 
 .speciality-item__desc {
+    width: 285px;
     margin-top: 15px;
     color: #51586a;
     font-size: 1.8rem;
@@ -754,4 +762,181 @@ a {
 .question-item:has(:checked) .question-item__answer {
     opacity: 1;
     visibility: visible;
+}
+
+// ========== Atmosphere ==========
+.atmosphere {
+    padding: 60px 0;
+    margin-top: 40px;
+}
+
+.atmosphere__id,
+.atmosphere__heading,
+.atmosphere__desc {
+    text-align: center;
+}
+
+.atmosphere__desc {
+    margin: 20px auto 0;
+    width: 528px;
+}
+
+.atmosphere__id {
+    margin: 30px auto 0;
+    color: #5d3bee;
+    font-size: 3.2rem;
+    font-weight: 500;
+    line-height: 1.25; /* 125% */
+    letter-spacing: -0.128rem;
+    text-decoration-line: underline;
+}
+
+.atmosphere__list {
+    margin-top: 70px;
+}
+
+.atmosphere__image {
+    height: 529px;
+}
+
+.atmosphere__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+// ========== Service ==========
+.service {
+    margin-top: 80px;
+}
+
+.service__inner {
+    margin: 0 auto;
+    padding: 68px 0;
+    width: 1330px;
+    max-width: calc(100% - 48px);
+    background: #fbfaff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.service__icon {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+}
+
+.service__heading {
+    margin-top: 15px;
+}
+
+.service__desc {
+    margin-top: 20px;
+    text-align: center;
+    width: 570px;
+}
+
+.service__btn {
+    margin-top: 42px;
+    background: #5d3bee;
+}
+
+// ========== Footer ==========
+.footer {
+    margin-top: 50px;
+}
+
+.footer-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__icons {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.header__icon {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(93, 59, 238, 0.2);
+}
+
+.header__email {
+    position: relative;
+    color: #080415;
+    font-size: 2.2rem;
+    font-weight: 500;
+    line-height: 1.36; /* 136.364% */
+}
+
+.header__email::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background: #080415;
+    left: 0;
+    bottom: 3px;
+}
+
+.header__avatar {
+    display: block;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.navbar__list {
+    display: flex;
+    align-items: center;
+    column-gap: 43px;
+}
+
+.navbar__link {
+    color: #51586a;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.footer__separator {
+    margin: 32px auto 0;
+    height: 1px;
+    background: rgba(12, 7, 32, 0.2);
+    width: 90%;
+}
+
+.footer__bottom {
+    padding: 18px 97px 30px 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__row {
+    display: flex;
+    column-gap: 36px;
+}
+
+.footer__condition {
+    position: relative;
+}
+
+.footer__condition::before {
+    position: absolute;
+    width: 1px;
+    height: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 14px;
+    background: rgba(82, 87, 113, 0.6);
 }

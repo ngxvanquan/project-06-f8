@@ -24,15 +24,23 @@
         <link rel="stylesheet" href="./assets/css/reset.css" />
         <link rel="stylesheet" href="./assets/css/grid.css" />
         <link rel="stylesheet" href="./assets/css/style.css" />
+        <link rel="stylesheet" href="./assets/css/responsive.css" />
     </head>
     <body>
         <header class="header">
             <div class="container">
                 <div class="header-top">
-                    <div class="header__icons">
+                    <div class="header__icons order-lg-1 order-2">
                         <div class="header__icon">
                             <img src="./assets/img/icon/letter.svg" alt="" />
                         </div>
+                        <label for="menu" class="header-menu">
+                            <img
+                                src="./assets/img/icon/menu-icon.svg"
+                                alt=""
+                                class="header-menu__img"
+                            />
+                        </label>
                         <a
                             title="Click to send mail!"
                             href="mailto:ngxvanquan@gmail.com"
@@ -44,10 +52,10 @@
                     <img
                         src="./assets/img/avatar/header-avatar.png"
                         alt=""
-                        class="header__avatar"
+                        class="header__avatar order-lg-2 order-sm-1"
                     />
 
-                    <nav class="navbar">
+                    <nav class="navbar order-lg-3">
                         <ul class="navbar__list">
                             <li class="navbar__item">
                                 <a href="#project" class="navbar__link"
@@ -75,7 +83,7 @@
 
                 <section class="hero">
                     <div class="row">
-                        <div class="col-6">
+                        <div class="col-lg-6 order-2 order-lg-1 col-12">
                             <div class="hero__media">
                                 <figure class="hero__images">
                                     <img
@@ -93,7 +101,9 @@
                             </div>
                         </div>
 
-                        <div class="col-5 offset-1">
+                        <div
+                            class="col-lg-5 offset-lg-1 order-1 order-lg-2 col-12"
+                        >
                             <section class="hero__content">
                                 <h1 class="hero__heading section-heading lv1">
                                     A Front-End Developer
@@ -152,71 +162,113 @@
                 </section>
             </div>
         </header>
+
+        <header class="mobile-header">
+            <input
+                class="checkbox-input"
+                type="checkbox"
+                name="menu"
+                id="menu"
+                hidden
+            />
+
+            <label for="menu" class="overlay"></label>
+            <div class="menu-drawer">
+                <!-- NavBar Logo -->
+                <img
+                    src="./assets/img/avatar/header-avatar.png"
+                    alt=""
+                    class="header__avatar"
+                />
+
+                <nav class="navbar">
+                    <ul class="navbar__list">
+                        <li class="navbar__item">
+                            <a href="#project" class="navbar__link">Projects</a>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="#journey" class="navbar__link">Journey</a>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="#service" class="navbar__link">Service</a>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="#contact" class="navbar__link">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
         <main class="main">
             <section class="client">
                 <div class="container">
-                    <div class="client__row row">
-                        <div class="col-md-3 offset-1">
-                            <h2 class="client__heading section-heading lv2">
-                                Meet my recent clients
-                            </h2>
-                        </div>
-                        <div class="client__list row row-cols-4">
-                            <div class="client-item">
-                                <img
-                                    src="./assets/img/icon/google-icon.svg"
-                                    alt=""
-                                    class="client__logo"
-                                />
+                    <div class="client__inner">
+                        <div class="client__row row">
+                            <div class="col-lg-3 col-12 offset-lg-1">
+                                <h2 class="client__heading section-heading lv2">
+                                    Meet my recent clients
+                                </h2>
                             </div>
-                            <div class="client-item">
-                                <img
-                                    src="./assets/img/icon/warner-bros.svg"
-                                    alt=""
-                                    class="client__logo"
-                                />
-                            </div>
-                            <div class="client-item">
-                                <img
-                                    src="./assets/img/icon/mailchimp.svg"
-                                    alt=""
-                                    class="client__logo"
-                                />
-                            </div>
-                            <div class="client-item">
-                                <img
-                                    src="./assets/img/icon/adobe.svg"
-                                    alt=""
-                                    class="client__logo"
-                                />
-                            </div>
-                            <div class="client-item">
-                                <img
-                                    src="./assets/img/icon/upwork.svg"
-                                    alt=""
-                                    class="client__logo"
-                                />
-                            </div>
-                            <div class="client-item">
-                                <img
-                                    src="./assets/img/icon/creative-cloud.svg"
-                                    alt=""
-                                    class="client__logo"
-                                />
-                            </div>
-                            <div class="client-item">
-                                <img
-                                    src="./assets/img/icon/woocommercde.svg"
-                                    alt=""
-                                    class="client__logo"
-                                />
-                            </div>
-                            <div class="client-item">
-                                <img
-                                    src="./assets/img/icon/canva.svg"
-                                    alt=""
-                                    class="client__logo"
-                                />
+                            <div
+                                class="client__list col-lg-8 col-12 row row-cols-lg-4 row-cols-2"
+                            >
+                                <div class="client-item">
+                                    <img
+                                        src="./assets/img/icon/google-icon.svg"
+                                        alt=""
+                                        class="client__logo"
+                                    />
+                                </div>
+                                <div class="client-item">
+                                    <img
+                                        src="./assets/img/icon/warner-bros.svg"
+                                        alt=""
+                                        class="client__logo"
+                                    />
+                                </div>
+                                <div class="client-item">
+                                    <img
+                                        src="./assets/img/icon/mailchimp.svg"
+                                        alt=""
+                                        class="client__logo"
+                                    />
+                                </div>
+                                <div class="client-item">
+                                    <img
+                                        src="./assets/img/icon/adobe.svg"
+                                        alt=""
+                                        class="client__logo"
+                                    />
+                                </div>
+                                <div class="client-item">
+                                    <img
+                                        src="./assets/img/icon/upwork.svg"
+                                        alt=""
+                                        class="client__logo"
+                                    />
+                                </div>
+                                <div class="client-item">
+                                    <img
+                                        src="./assets/img/icon/creative-cloud.svg"
+                                        alt=""
+                                        class="client__logo"
+                                    />
+                                </div>
+                                <div class="client-item">
+                                    <img
+                                        src="./assets/img/icon/woocommercde.svg"
+                                        alt=""
+                                        class="client__logo"
+                                    />
+                                </div>
+                                <div class="client-item">
+                                    <img
+                                        src="./assets/img/icon/canva.svg"
+                                        alt=""
+                                        class="client__logo"
+                                    />
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -234,53 +286,59 @@
                     </p>
 
                     <div class="speciality__row row">
-                        <div class="col speciality-item">
-                            <div class="speciality__icon-wrap">
-                                <img
-                                    src="./assets/img/icon/lightbuild.svg"
-                                    alt=""
-                                    class="speciality__icon"
-                                />
+                        <div class="col-lg-4 col-md-6 col-12 speciality-item">
+                            <div class="speciality-item__inner">
+                                <div class="speciality__icon-wrap">
+                                    <img
+                                        src="./assets/img/icon/lightbuild.svg"
+                                        alt=""
+                                        class="speciality__icon"
+                                    />
+                                </div>
+                                <h3 class="speciality-item__heading">
+                                    Front-End developer
+                                </h3>
+                                <p class="speciality-item__desc">
+                                    Lorem ipsum dolor sit amet, solor adipiscing
+                                    elit. Non nisl solor ut elementum turpis.
+                                </p>
                             </div>
-                            <h3 class="speciality-item__heading">
-                                Front-End developer
-                            </h3>
-                            <p class="speciality-item__desc">
-                                Lorem ipsum dolor sit amet, solor adipiscing
-                                elit. Non nisl solor ut elementum turpis.
-                            </p>
                         </div>
-                        <div class="col speciality-item">
-                            <div class="speciality__icon-wrap">
-                                <img
-                                    src="./assets/img/icon/pencil-ruler.svg"
-                                    alt=""
-                                    class="speciality__icon"
-                                />
+                        <div class="col-lg-4 col-md-6 col-12 speciality-item">
+                            <div class="speciality-item__inner">
+                                <div class="speciality__icon-wrap">
+                                    <img
+                                        src="./assets/img/icon/pencil-ruler.svg"
+                                        alt=""
+                                        class="speciality__icon"
+                                    />
+                                </div>
+                                <h3 class="speciality-item__heading">
+                                    Back-End developer
+                                </h3>
+                                <p class="speciality-item__desc">
+                                    Lorem ipsum dolor sit amet, solor adipiscing
+                                    elit. Non nisl solor ut elementum turpis.
+                                </p>
                             </div>
-                            <h3 class="speciality-item__heading">
-                                Back-End developer
-                            </h3>
-                            <p class="speciality-item__desc">
-                                Lorem ipsum dolor sit amet, solor adipiscing
-                                elit. Non nisl solor ut elementum turpis.
-                            </p>
                         </div>
-                        <div class="col speciality-item">
-                            <div class="speciality__icon-wrap">
-                                <img
-                                    src="./assets/img/icon/phone.svg"
-                                    alt=""
-                                    class="speciality__icon"
-                                />
+                        <div class="col-lg-4 col-md-6 col-12 speciality-item">
+                            <div class="speciality-item__inner">
+                                <div class="speciality__icon-wrap">
+                                    <img
+                                        src="./assets/img/icon/phone.svg"
+                                        alt=""
+                                        class="speciality__icon"
+                                    />
+                                </div>
+                                <h3 class="speciality-item__heading">
+                                    Produce developer
+                                </h3>
+                                <p class="speciality-item__desc">
+                                    Lorem ipsum dolor sit amet, solor adipiscing
+                                    elit. Non nisl solor ut elementum turpis.
+                                </p>
                             </div>
-                            <h3 class="speciality-item__heading">
-                                Produce developer
-                            </h3>
-                            <p class="speciality-item__desc">
-                                Lorem ipsum dolor sit amet, solor adipiscing
-                                elit. Non nisl solor ut elementum turpis.
-                            </p>
                         </div>
                     </div>
                 </div>
@@ -289,13 +347,13 @@
             <section id="project" class="project">
                 <div class="container">
                     <div class="project__row row">
-                        <div class="col-4">
+                        <div class="col-lg-4 col-sm-12">
                             <h2 class="project__heading section-heading lv2">
                                 Take a look at my recent projects
                             </h2>
                         </div>
 
-                        <div class="col-4 offset-1">
+                        <div class="col-lg-4 col-sm-12 offset-lg-1">
                             <p class="project__desc section-desc">
                                 Lorem ipsum dolor sit amet, consectetur
                                 adipiscing elit. In urna, non nisl tincidunt ut
@@ -731,7 +789,136 @@
                     </div>
                 </div>
             </section>
+
+            <section class="atmosphere">
+                <div class="container">
+                    <h2 class="atmosphere__heading section-heading lv2">
+                        My atmosphere
+                    </h2>
+                    <p class="atmosphere__desc section-desc">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        In urna, non nisl tincidunt ut elementum turpis.
+                    </p>
+                    <p class="atmosphere__id">@interaction_arif</p>
+
+                    <div class="atmosphere__list">
+                        <div class="row row-cols-lg-3 row-cols-md-2">
+                            <div class="atmosphere-item col">
+                                <figure class="atmosphere__image">
+                                    <img
+                                        src="./assets/img/atmosphere-01.png"
+                                        alt=""
+                                        class="atmosphere__img"
+                                    />
+                                </figure>
+                            </div>
+                            <div class="atmosphere-item col">
+                                <figure class="atmosphere__image">
+                                    <img
+                                        src="./assets/img/atmosphere-02.png"
+                                        alt=""
+                                        class="atmosphere__img"
+                                    />
+                                </figure>
+                            </div>
+                            <div class="atmosphere-item col">
+                                <figure class="atmosphere__image">
+                                    <img
+                                        src="./assets/img/atmosphere-03.png"
+                                        alt=""
+                                        class="atmosphere__img"
+                                    />
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="service">
+                <div class="service__inner">
+                    <img
+                        src="./assets/img/icon/service-icon.png"
+                        alt=""
+                        class="service__icon"
+                    />
+                    <h2 class="service__heading section-heading lv2">
+                        Got a project? Let’s talk
+                    </h2>
+                    <p class="service__desc section-desc">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        In urna, non nisl tincidunt ut elementum turpis.
+                    </p>
+
+                    <button class="service__btn btn">Book a Call</button>
+                </div>
+            </section>
         </main>
-        <footer class="footer"></footer>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-top">
+                    <div class="header__icons order-sm-3 order-lg-1">
+                        <div class="header__icon">
+                            <img src="./assets/img/icon/letter.svg" alt="" />
+                        </div>
+                        <a
+                            title="Click to send mail!"
+                            href="mailto:ngxvanquan@gmail.com"
+                            class="header__email"
+                            >ngxvanquan@gmail.com</a
+                        >
+                    </div>
+
+                    <img
+                        src="./assets/img/avatar/header-avatar.png"
+                        alt=""
+                        class="header__avatar order-sm-1 order-lg-2"
+                    />
+
+                    <nav class="navbar order-sm-2 order-lg-3">
+                        <ul class="navbar__list">
+                            <li class="navbar__item">
+                                <a href="#project" class="navbar__link"
+                                    >Projects</a
+                                >
+                            </li>
+                            <li class="navbar__item">
+                                <a href="#journey" class="navbar__link"
+                                    >Journey</a
+                                >
+                            </li>
+                            <li class="navbar__item">
+                                <a href="#service" class="navbar__link"
+                                    >Service</a
+                                >
+                            </li>
+                            <li class="navbar__item">
+                                <a href="#contact" class="navbar__link"
+                                    >Contact</a
+                                >
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="footer__separator"></div>
+
+            <div class="container">
+                <div class="footer__bottom">
+                    <p class="footer__copyright section-desc">
+                        ©interactiveArif 2021. All rights reserved.
+                    </p>
+
+                    <div class="footer__row">
+                        <p class="footer__privacy section-desc">
+                            Privacy Policy
+                        </p>
+                        <p class="footer__condition section-desc">
+                            Terms of Conditions
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>

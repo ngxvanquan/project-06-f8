@@ -1,0 +1,174 @@
+// X-Small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 767px) {
+    .hero .hero__heading {
+        width: 260px;
+        font-size: 4.2rem;
+        line-height: 1.19; /* 119.048% */
+        letter-spacing: -0.168rem;
+    }
+
+    .hero__desc {
+        width: 318px;
+        font-size: 1.6rem;
+        line-height: 1.62; /* 162.5% */
+    }
+}
+
+// (tablets and mobile)
+@media screen and (max-width: 991px) {
+    .header-top .navbar {
+        display: none;
+    }
+
+    .mobile-header .overlay {
+        position: fixed;
+        inset: 0 0;
+        background: rgba(0, 0, 0, 0.3);
+        opacity: 0;
+        visibility: hidden;
+        z-index: 1;
+        transition: 0.5s ease;
+    }
+
+    .mobile-header .menu-drawer {
+        transform: translateX(100%);
+        position: fixed;
+        inset: 0 0 0 40%;
+        background: #fff;
+        z-index: 2;
+        transition: 0.5s ease;
+
+        padding: 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .menu-drawer .navbar__list {
+        margin-top: 20px;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    .menu-drawer .navbar__link {
+        font-size: 3rem;
+    }
+
+    .checkbox-input:checked + .overlay {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .checkbox-input:checked ~ .menu-drawer {
+        transform: translateX(0);
+    }
+
+    .header-menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 46px;
+        height: 46px;
+        border-radius: 50%;
+        border: 1px solid rgba(93, 59, 238, 0.2);
+    }
+
+    .header-top .header__email {
+        display: none;
+    }
+
+    .hero__content .hero__decor {
+        display: none;
+    }
+
+    .hero__desc {
+        width: 70%;
+    }
+
+    .hero__images {
+        margin-top: 40px;
+        width: 100%;
+        height: 1000px;
+    }
+
+    .hero__media .hero__decor {
+        top: 214px;
+        right: -3px;
+    }
+
+    .client__heading {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .client__heading::before {
+        top: -7px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .client__list {
+        margin-top: 40px;
+    }
+
+    .speciality-item {
+        margin-top: 24px;
+    }
+
+    .project__heading {
+        margin: 0 auto;
+        text-align: center;
+        width: 500px;
+    }
+
+    .project__desc {
+        margin: 20px auto 0;
+        text-align: center;
+        width: 400px;
+    }
+
+    .project__list {
+        grid-template-columns: 1fr;
+    }
+
+    .interactive-stats__column {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .atmosphere-item:last-child {
+        margin-top: 24px;
+    }
+
+    .footer-top {
+        flex-direction: column;
+        row-gap: 30px;
+    }
+
+    .footer__bottom {
+        padding: 18px 10px 30px 10px;
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    .mobile-header {
+        display: none;
+    }
+
+    .header-menu {
+        display: none;
+    }
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) {
+}
